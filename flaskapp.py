@@ -1,12 +1,12 @@
 from flask import Flask
 app = Flask(__name__)
-@app.route("/")
+@app.route('/')
 def hello():
     return "Welcome to Flask Application!"
 
-@app.route("/webhoook")
-def pontuado():
-    return "Webhooks"    
+@app.route('/webhooks')
+def zupyhooks():
+    return 'Hello, World'
 
 
 if __name__ == "__main__":
