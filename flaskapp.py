@@ -1,7 +1,6 @@
 from flask import json
 from flask import request
 from flask import Flask
-
 import firebase_admin
 from firebase_admin import credentials
 
@@ -15,7 +14,7 @@ firebase_admin.initialize_app(cred)
 # criar uma variave para associar ao banco de dados do firestore
 db=firestore.client()
 
-
+#iniciando o App Flask
 app = Flask(__name__)
 @app.route('/')
 def hello():
